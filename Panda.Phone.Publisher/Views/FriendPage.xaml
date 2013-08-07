@@ -1,0 +1,101 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Panda.Phone.Publisher.Views.FriendPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:tool="clr-namespace:Panda.Phone.Publisher.Tools"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="False" xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        
+        <controls:Panorama HorizontalAlignment="Left" Name="panorama" Title="Activity Of Friends">
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="/Image_Post/bg.jpg"></ImageBrush>
+            </controls:Panorama.Background>
+            <controls:PanoramaItem Header="Resourse info">
+                <ListBox x:Name="list_PostResourse" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel toolkit:TiltEffect.IsTiltEnabled="True">
+                            <StackPanel Orientation="Horizontal" Margin="5,10">
+                                <Image x:Name="img_Avatar" Height="120" Width="120" Loaded="img_Avatar_Loaded"></Image>
+                                    <StackPanel Margin="20,0,0,0" Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal">
+                                     <TextBlock Text="{Binding Path=Name}" FontSize="25" FontWeight="Bold"></TextBlock>
+                                     <TextBlock Margin="5,5,0,0" Text="{Binding Path=Describe}" FontSize="20" Width="220" TextWrapping="Wrap"></TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Margin="10,5,0,0" Foreground="#FF6BC239"><Run Text="{Binding Co2}"/> Kg</TextBlock>
+                                        <Image Margin="10,0,0,0" Source="/Image_Friends/co2.png"/>
+                                        <TextBlock Margin="50,5,0,0" Foreground="#FF6BC239"><Run Text="{Binding Forest}"/></TextBlock>
+                                        <Image Margin="10,0,0,0" Source="/Image_Friends/trees.png"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock  Margin="10,5,0,0" Foreground="#FF6BC239"><Run Text="{Binding Electric}"/>KWh</TextBlock>
+                                        <Image Margin="10,0,0,0" Source="/Image_Friends/electric.png"/>
+                                    </StackPanel>
+                                    <!--<TextBlock Text="{Binding Path=PostAffect}" Width="290" TextWrapping="Wrap" FontSize="18"></TextBlock>-->
+                                    <TextBlock HorizontalAlignment="Right"  Text="{Binding Path=Time}" FontSize="13"></TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                                <Image Stretch="Fill" Source="/Image_Recycle/Menu/line.png" Width="400"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="Photo">
+                <ListBox>
+                    <toolkit:WrapPanel x:Name="wp_Photo">
+                     </toolkit:WrapPanel>
+                </ListBox>
+            </controls:PanoramaItem>
+            <controls:PanoramaItem Header="Achievement">
+
+                <ListBox x:Name="list_Achievement">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel toolkit:TiltEffect.IsTiltEnabled="True">
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <Image  Height="160" Width="190" Stretch="Fill" x:Name="UserAvatar" Loaded="UserAvatar_Loaded"></Image>
+                                <StackPanel Orientation="Vertical" Margin="20,5" >
+                                    <TextBlock Width="200" TextWrapping="Wrap"><Run Text="{Binding Path=Name}" FontWeight="Bold" FontSize="25"/><Run Text="  "/> 
+                                        <Run Text="{Binding Path=Describe}"/></TextBlock>
+                                    <Image Margin="-20,10,0,0" Height="60" Width="100" Stretch="Fill"  Source="{Binding Path=ImageUri}"></Image>
+                                    <TextBlock Margin="-20,0,0,0" TextAlignment="Center" Width="160" FontWeight="ExtraBold" Text="{Binding Path=Category}"></TextBlock>
+                                    <TextBlock Margin="0,20,0,0" Width="150" TextAlignment="Right" Text="{Binding Path=Time}" FontSize="13"></TextBlock>
+                                </StackPanel>
+                                  
+                                </StackPanel>
+                                <Image Stretch="Fill" Source="/Image_Recycle/Menu/line.png" Width="400"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PanoramaItem>
+        </controls:Panorama>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

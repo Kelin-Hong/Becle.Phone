@@ -1,0 +1,53 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
+	xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions" 
+	x:Class="Panda.Phone.Views.E_WasteList"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <ListBox x:Name="listBox" Margin="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto">
+            
+        	<StackPanel Orientation="Horizontal" Background="Gray" Margin="5">
+        		<CheckBox x:Name="phone" Width="180" Content="Phone"/>
+                <TextBlock Text="Amount"  x:Name="PhoneNumber" Margin="0,20,10,10"/>
+        		<TextBox Width="180"/>
+        	</StackPanel>
+        	<StackPanel Orientation="Horizontal" Background="Gray" Margin="5">
+        		<CheckBox  Content="IV" x:Name="iV" Width="180"/>
+                <TextBlock Text="Amount" x:Name="iVNumber" Margin="0,20,10,10"/>
+        		<TextBox Width="180"/>
+        	</StackPanel>
+        	<StackPanel Orientation="Horizontal" Background="Gray" Margin="5">
+        		<CheckBox  Content="Computer" x:Name="computer" Width="180"/>
+                <TextBlock Text="Amount"  x:Name="computerNumber" Margin="0,20,10,10"/>
+        		<TextBox Width="180"/>
+        	</StackPanel>
+        	<StackPanel Orientation="Horizontal" Background="Gray" Margin="5">
+        		<CheckBox  Content="MP3/Mp4" x:Name="map" Width="180"/>
+                <TextBlock Text="Amount"  x:Name="mapNumber" Margin="0,20,10,10"/>
+        		<TextBox Width="180"/>
+        	</StackPanel>
+                
+        	<StackPanel Orientation="Vertical" Background="Gray" Margin="5">
+                <CheckBox  Content="Ohter" x:Name="other" Width="180"/>
+        		<StackPanel Orientation="Horizontal">
+        			<TextBlock Text="Name" x:Name="otherName"  Margin="10,20,10,10"/>
+        			<TextBox Width="140"/>
+                    <TextBlock Text="Amount"  x:Name="otherNumber"  Margin="10,20,10,10"/>
+        			<TextBox Width="130"/>
+        		</StackPanel>
+                  
+        	</StackPanel>
+
+        </ListBox>
+    </Grid>
+</UserControl>

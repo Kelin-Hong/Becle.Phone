@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Becle.Server.DataModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Becle.Server.DataModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/PublisherService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+  <xs:complexType name="RegisterUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImageFileData" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Passwrod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisterUser" nillable="true" type="tns:RegisterUser" />
+  <xs:complexType name="Login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Passwrod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Login" nillable="true" type="tns:Login" />
+  <xs:complexType name="PostItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryId" type="xs:int" />
+      <xs:element minOccurs="0" name="Describe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostAffect" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostImage" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PostItem" nillable="true" type="tns:PostItem" />
+  <xs:complexType name="ArrayOfPostTrend">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PostTrend" nillable="true" type="tns:PostTrend" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPostTrend" nillable="true" type="tns:ArrayOfPostTrend" />
+  <xs:complexType name="PostTrend">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Describe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostAffect" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PostTrend" nillable="true" type="tns:PostTrend" />
+  <xs:complexType name="ArrayOfMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessage" nillable="true" type="tns:ArrayOfMessage" />
+  <xs:complexType name="Message">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FromId" type="xs:int" />
+      <xs:element minOccurs="0" name="IsSee" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MessageContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Message" nillable="true" type="tns:Message" />
+  <xs:complexType name="ArrayOfPhotoTrend">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PhotoTrend" nillable="true" type="tns:PhotoTrend" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhotoTrend" nillable="true" type="tns:ArrayOfPhotoTrend" />
+  <xs:complexType name="PhotoTrend">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Describe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PhotoTrend" nillable="true" type="tns:PhotoTrend" />
+  <xs:complexType name="ArrayOfAchievementTrend">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AchievementTrend" nillable="true" type="tns:AchievementTrend" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAchievementTrend" nillable="true" type="tns:ArrayOfAchievementTrend" />
+  <xs:complexType name="AchievementTrend">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Achievement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImageUri" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AchievementTrend" nillable="true" type="tns:AchievementTrend" />
+  <xs:complexType name="ArrayOfReward">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Reward" nillable="true" type="tns:Reward" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReward" nillable="true" type="tns:ArrayOfReward" />
+  <xs:complexType name="Reward">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="AvatarUri" nillable="true" type="q1:Stream" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Describe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StoreName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Reward" nillable="true" type="tns:Reward" />
+  <xs:complexType name="ArrayOfAcquirer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Acquirer" nillable="true" type="tns:Acquirer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcquirer" nillable="true" type="tns:ArrayOfAcquirer" />
+  <xs:complexType name="Acquirer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="AvatarUri" nillable="true" type="q2:Stream" />
+      <xs:element minOccurs="0" name="BinName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Acquirer" nillable="true" type="tns:Acquirer" />
+  <xs:complexType name="ArrayOfCity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="City" nillable="true" type="tns:City" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCity" nillable="true" type="tns:ArrayOfCity" />
+  <xs:complexType name="City">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LastRank" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Points" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="City" nillable="true" type="tns:City" />
+</xs:schema>

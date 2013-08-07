@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PhoneService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Panda.Phone.DataModel" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPhoneService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IPhoneService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhoneService_getRecycleActivityList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRecycleActivityList" />
+  </wsdl:message>
+  <wsdl:message name="IPhoneService_getRecycleActivityList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRecycleActivityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhoneService_getRecycleFriendList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRecycleFriendList" />
+  </wsdl:message>
+  <wsdl:message name="IPhoneService_getRecycleFriendList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRecycleFriendListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhoneService_getAddressByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAddressByName" />
+  </wsdl:message>
+  <wsdl:message name="IPhoneService_getAddressByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAddressByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPhoneService">
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPushNotificationService/Register" message="tns:IPhoneService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPushNotificationService/RegisterResponse" message="tns:IPhoneService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRecycleActivityList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhoneService/getRecycleActivityList" message="tns:IPhoneService_getRecycleActivityList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhoneService/getRecycleActivityListResponse" message="tns:IPhoneService_getRecycleActivityList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRecycleFriendList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhoneService/getRecycleFriendList" message="tns:IPhoneService_getRecycleFriendList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhoneService/getRecycleFriendListResponse" message="tns:IPhoneService_getRecycleFriendList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAddressByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhoneService/getAddressByName" message="tns:IPhoneService_getAddressByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhoneService/getAddressByNameResponse" message="tns:IPhoneService_getAddressByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IPushNotificationService">
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPushNotificationService/Register" message="tns:IPhoneService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPushNotificationService/RegisterResponse" message="tns:IPhoneService_Register_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PhoneService" type="tns:IPhoneService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IPushNotificationService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRecycleActivityList">
+      <soap:operation soapAction="http://tempuri.org/IPhoneService/getRecycleActivityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRecycleFriendList">
+      <soap:operation soapAction="http://tempuri.org/IPhoneService/getRecycleFriendList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAddressByName">
+      <soap:operation soapAction="http://tempuri.org/IPhoneService/getAddressByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PushNotification" type="tns:IPushNotificationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IPushNotificationService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PhoneService">
+    <wsdl:port name="PhoneService" binding="tns:PhoneService">
+      <soap:address location="http://5.5.5.122:8080/PhoneService" />
+    </wsdl:port>
+    <wsdl:port name="PushNotification" binding="tns:PushNotification">
+      <soap:address location="http://5.5.5.122:8080/PhoneService/PushNotification" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

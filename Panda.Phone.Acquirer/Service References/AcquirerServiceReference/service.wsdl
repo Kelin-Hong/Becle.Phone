@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AcquirerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Panda.Phone.DataModel" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAcquirerService_GetChoicedPoint_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChoicedPoint" />
+  </wsdl:message>
+  <wsdl:message name="IAcquirerService_GetChoicedPoint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChoicedPointResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAcquirerService_getAllUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllUser" />
+  </wsdl:message>
+  <wsdl:message name="IAcquirerService_getAllUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAcquirerService_getItemsByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getItemsByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IAcquirerService_getItemsByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getItemsByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAcquirerService_getItemsByCategoryId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getItemsByCategoryId" />
+  </wsdl:message>
+  <wsdl:message name="IAcquirerService_getItemsByCategoryId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getItemsByCategoryIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAcquirerService">
+    <wsdl:operation name="GetChoicedPoint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcquirerService/GetChoicedPoint" message="tns:IAcquirerService_GetChoicedPoint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcquirerService/GetChoicedPointResponse" message="tns:IAcquirerService_GetChoicedPoint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcquirerService/getAllUser" message="tns:IAcquirerService_getAllUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcquirerService/getAllUserResponse" message="tns:IAcquirerService_getAllUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getItemsByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcquirerService/getItemsByUserId" message="tns:IAcquirerService_getItemsByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcquirerService/getItemsByUserIdResponse" message="tns:IAcquirerService_getItemsByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getItemsByCategoryId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcquirerService/getItemsByCategoryId" message="tns:IAcquirerService_getItemsByCategoryId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcquirerService/getItemsByCategoryIdResponse" message="tns:IAcquirerService_getItemsByCategoryId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AcquirerService" type="tns:IAcquirerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetChoicedPoint">
+      <soap:operation soapAction="http://tempuri.org/IAcquirerService/GetChoicedPoint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUser">
+      <soap:operation soapAction="http://tempuri.org/IAcquirerService/getAllUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemsByUserId">
+      <soap:operation soapAction="http://tempuri.org/IAcquirerService/getItemsByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemsByCategoryId">
+      <soap:operation soapAction="http://tempuri.org/IAcquirerService/getItemsByCategoryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AcquirerService">
+    <wsdl:port name="AcquirerService" binding="tns:AcquirerService">
+      <soap:address location="http://5.5.5.113:8080/AcquirerService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

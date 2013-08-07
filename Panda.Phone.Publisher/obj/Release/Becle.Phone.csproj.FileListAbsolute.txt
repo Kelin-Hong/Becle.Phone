@@ -1,0 +1,365 @@
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Cancel.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Check.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Acquirer\Menu\wp7.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Recycle\Menu\m_open.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ApplicationIcon.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Background.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card1.jpg
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card2.jpg
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card3.jpg
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card4.jpg
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\data.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\gift.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\post.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\recycle.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\setting.png
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\wp7_bg.jpg
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.pdb
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\AppManifest.xaml
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Becle.xap
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.xml
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.xml
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.xml
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\ResolveAssemblyReference.cache
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\App.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Category.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Detail1.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Menu.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_TimeMenu.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Friend_Photo.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Post_FillMessage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_1.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_detail.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_SendMessage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Message.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_1.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_Detail.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile1.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile2.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\AcquirerPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\FriendPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\LoginPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\MainPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostSuccessPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PublisherRegisterPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RecyclePage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\TestPage.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.g.resources
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.pdb
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\XapCacheFile.xml
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Message.g.i.cs
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage1.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Cancel.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Check.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Acquirer\Menu\wp7.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Recycle\Menu\m_open.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ApplicationIcon.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Background.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card1.jpg
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card2.jpg
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card3.jpg
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card4.jpg
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\data.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\gift.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\post.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\recycle.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\setting.png
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\wp7_bg.jpg
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.pdb
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\AppManifest.xaml
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Becle.xap
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\RenrenSDKLibrary.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\RenrenSDKLibrary.pdb
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.xml
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.xml
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.xml
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\ResolveAssemblyReference.cache
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\App.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Category.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Detail1.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Menu.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_TimeMenu.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Friend_Photo.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Post_FillMessage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\RecyclePlanDetail.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_1.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_detail.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_SendMessage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Message.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Message.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_1.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_Detail.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile1.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile2.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile3.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\RecyclePlan.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\VolunteerPlan.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\AcquirerPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage1.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\FriendPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\LoginPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\MainPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\MessagePage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostSuccessPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PublisherRegisterPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RecyclePage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RenRenFriendTest.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RewardPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\TestPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\TestPage1.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\VolunteerPage.g.i.cs
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.g.resources
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.dll
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.pdb
+C:\Users\hkl\Desktop\Panda.Phone\Panda.Phone.Publisher\obj\Release\XapCacheFile.xml
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Cancel.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Check.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Acquirer\Menu\wp7.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Recycle\Menu\m_open.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ApplicationIcon.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Background.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card1.jpg
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card2.jpg
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card3.jpg
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card4.jpg
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\data.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\gift.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\post.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\recycle.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\setting.png
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\wp7_bg.jpg
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.pdb
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\AppManifest.xaml
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Becle.xap
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\RenrenSDKLibrary.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\RenrenSDKLibrary.pdb
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.xml
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.xml
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.xml
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.xml
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\ResolveAssemblyReference.cache
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\App.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Category.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Detail1.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Menu.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_TimeMenu.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Friend_Photo.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Post_FillMessage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\RecyclePlanDetail.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_1.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_detail.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_SendMessage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Message.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Message.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_1.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_Detail.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile1.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile2.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile3.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\RecyclePlan.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\VolunteerPlan.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\AcquirerPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage1.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\FriendPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\LoginPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\MainPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\MessagePage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostSuccessPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PublisherRegisterPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RecyclePage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RenRenFriendTest.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RewardPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\TestPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\TestPage1.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\VolunteerPage.g.i.cs
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.g.resources
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.dll
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.pdb
+F:\my project\Panda.Phone\Panda.Phone.Publisher\obj\Release\XapCacheFile.xml
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Cancel.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Toolkit.Content\ApplicationBar.Check.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Acquirer\Menu\wp7.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Recycle\Menu\m_open.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ApplicationIcon.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Background.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card1.jpg
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card2.jpg
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card3.jpg
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\card4.jpg
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\data.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\gift.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\post.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\recycle.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\setting.png
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Image_Home\wp7_bg.jpg
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Panda.Phone.Publisher.pdb
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\AppManifest.xaml
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Becle.xap
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\RenrenSDKLibrary.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\RenrenSDKLibrary.pdb
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Expression.Interactions.xml
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.xml
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Maps.xml
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\System.Windows.Interactivity.xml
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\de\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\en\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\es\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\fr\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\it\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ja\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\ko\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\Bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\ResolveAssemblyReference.cache
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\App.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Category.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Detail1.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Menu.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_TimeMenu.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Friend_Photo.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Post_FillMessage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\RecyclePlanDetail.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_1.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_detail.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Menu_SendMessage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Recycle_Message.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Acquirer_Message.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_1.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Reward_Menu_Detail.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile1.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile2.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\Tile3.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\RecyclePlan.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Controls\VolunteerPlan.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\AcquirerPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\DataPage1.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\FriendPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\LoginPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\MainPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\MessagePage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PostSuccessPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\PublisherRegisterPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RecyclePage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RenRenFriendTest.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\RewardPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\TestPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\TestPage1.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Views\VolunteerPage.g.i.cs
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.g.resources
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.dll
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\Panda.Phone.Publisher.pdb
+F:\my project\Becle.Phone\Panda.Phone\Panda.Phone.Publisher\obj\Release\XapCacheFile.xml

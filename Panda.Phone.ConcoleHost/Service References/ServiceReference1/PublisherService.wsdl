@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PublisherService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/PublisherService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/PublisherService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/PublisherService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Becle.Server.DataModel" />
+      <xsd:import schemaLocation="http://localhost:8080/PublisherService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+      <xsd:import schemaLocation="http://localhost:8080/PublisherService?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPublisherService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_Post_InputMessage">
+    <wsdl:part name="parameters" element="tns:Post" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_Post_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetPostTrend_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPostTrend" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetPostTrend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPostTrendResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessage" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetPhotoTrend_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotoTrend" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetPhotoTrend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotoTrendResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetAchievementTrend_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAchievementTrend" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetAchievementTrend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAchievementTrendResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_getReward_InputMessage">
+    <wsdl:part name="parameters" element="tns:getReward" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_getReward_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRewardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetAcquirer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcquirer" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetAcquirer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAcquirerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCity" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_GetCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_getImageByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getImageByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_getImageByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getImageByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_getImageByItemId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getImageByItemId" />
+  </wsdl:message>
+  <wsdl:message name="IPublisherService_getImageByItemId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getImageByItemIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPublisherService">
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/Register" message="tns:IPublisherService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/RegisterResponse" message="tns:IPublisherService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/Login" message="tns:IPublisherService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/LoginResponse" message="tns:IPublisherService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Post">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/Post" message="tns:IPublisherService_Post_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/PostResponse" message="tns:IPublisherService_Post_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostTrend">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/GetPostTrend" message="tns:IPublisherService_GetPostTrend_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/GetPostTrendResponse" message="tns:IPublisherService_GetPostTrend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/GetMessage" message="tns:IPublisherService_GetMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/GetMessageResponse" message="tns:IPublisherService_GetMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhotoTrend">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/GetPhotoTrend" message="tns:IPublisherService_GetPhotoTrend_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/GetPhotoTrendResponse" message="tns:IPublisherService_GetPhotoTrend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAchievementTrend">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/GetAchievementTrend" message="tns:IPublisherService_GetAchievementTrend_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/GetAchievementTrendResponse" message="tns:IPublisherService_GetAchievementTrend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getReward">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/getReward" message="tns:IPublisherService_getReward_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/getRewardResponse" message="tns:IPublisherService_getReward_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/GetAcquirer" message="tns:IPublisherService_GetAcquirer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/GetAcquirerResponse" message="tns:IPublisherService_GetAcquirer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/GetCity" message="tns:IPublisherService_GetCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/GetCityResponse" message="tns:IPublisherService_GetCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getImageByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/getImageByUserId" message="tns:IPublisherService_getImageByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/getImageByUserIdResponse" message="tns:IPublisherService_getImageByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getImageByItemId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPublisherService/getImageByItemId" message="tns:IPublisherService_getImageByItemId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPublisherService/getImageByItemIdResponse" message="tns:IPublisherService_getImageByItemId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PublisherService" type="tns:IPublisherService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Post">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/Post" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostTrend">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/GetPostTrend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessage">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/GetMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhotoTrend">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/GetPhotoTrend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAchievementTrend">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/GetAchievementTrend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReward">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/getReward" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAcquirer">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/GetAcquirer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCity">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/GetCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImageByUserId">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/getImageByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImageByItemId">
+      <soap:operation soapAction="http://tempuri.org/IPublisherService/getImageByItemId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PublisherService">
+    <wsdl:port name="PublisherService" binding="tns:PublisherService">
+      <soap:address location="http://localhost:8080/PublisherService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

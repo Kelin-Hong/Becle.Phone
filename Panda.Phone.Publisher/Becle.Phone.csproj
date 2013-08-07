@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19DAE4DC-AA55-45A6-9355-B6A0DA3EF221}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Panda.Phone.Publisher</RootNamespace>
+    <AssemblyName>Panda.Phone.Publisher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Becle.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Panda.Phone.Publisher.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Constant.cs" />
+    <Compile Include="Controls\Acquirer_Category.xaml.cs">
+      <DependentUpon>Acquirer_Category.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Acquirer_Detail1.xaml.cs">
+      <DependentUpon>Acquirer_Detail1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Acquirer_Menu.xaml.cs">
+      <DependentUpon>Acquirer_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Acquirer_TimeMenu.xaml.cs">
+      <DependentUpon>Acquirer_TimeMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Friend_Photo.xaml.cs">
+      <DependentUpon>Friend_Photo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Post_FillMessage.xaml.cs">
+      <DependentUpon>Post_FillMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecyclePlanDetail.xaml.cs">
+      <DependentUpon>RecyclePlanDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recycle_Menu.xaml.cs">
+      <DependentUpon>Recycle_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recycle_Menu_1.xaml.cs">
+      <DependentUpon>Recycle_Menu_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recycle_Menu_detail.xaml.cs">
+      <DependentUpon>Recycle_Menu_detail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recycle_Menu_SendMessage.xaml.cs">
+      <DependentUpon>Recycle_Menu_SendMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Recycle_Message.xaml.cs">
+      <DependentUpon>Recycle_Message.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Acquirer_Message.xaml.cs">
+      <DependentUpon>Acquirer_Message.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reward_Menu.xaml.cs">
+      <DependentUpon>Reward_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reward_Menu_1.xaml.cs">
+      <DependentUpon>Reward_Menu_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Reward_Menu_Detail.xaml.cs">
+      <DependentUpon>Reward_Menu_Detail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Tile1.xaml.cs">
+      <DependentUpon>Tile1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Tile2.xaml.cs">
+      <DependentUpon>Tile2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Tile3.xaml.cs">
+      <DependentUpon>Tile3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecyclePlan.xaml.cs">
+      <DependentUpon>RecyclePlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VolunteerPlan.xaml.cs">
+      <DependentUpon>VolunteerPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Copy of Tools\LinqToVisualTree.cs" />
+    <Compile Include="Copy of Tools\ListAnimation.cs" />
+    <Compile Include="Copy of Tools\MetroInMotion.cs" />
+    <Compile Include="DataBase\AchievementTrendTable.cs" />
+    <Compile Include="DataBase\AcquirerTable.cs" />
+    <Compile Include="DataBase\CategoryTable.cs" />
+    <Compile Include="DataBase\CityTable.cs" />
+    <Compile Include="DataBase\ConfirmMessageTable.cs" />
+    <Compile Include="DataBase\Database.cs" />
+    <Compile Include="DataBase\DataUserTable.cs" />
+    <Compile Include="DataBase\FriendTable.cs" />
+    <Compile Include="DataBase\ItemTable.cs" />
+    <Compile Include="DataBase\MessageTable.cs" />
+    <Compile Include="DataBase\MSMToAcqurer.cs" />
+    <Compile Include="DataBase\PhotoTrendTable.cs" />
+    <Compile Include="DataBase\PostTrendTable.cs" />
+    <Compile Include="DataBase\RecyclePlanShipTable.cs" />
+    <Compile Include="DataBase\RecyclePlanTable.cs" />
+    <Compile Include="DataBase\RewardTable.cs" />
+    <Compile Include="DataBase\UserTable.cs" />
+    <Compile Include="DataBase\VolunteerPlanTable.cs" />
+    <Compile Include="DataBase\VolunteerTableShip.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Model\AchievementModel.cs" />
+    <Compile Include="Model\AcquirerMessageModel.cs" />
+    <Compile Include="Model\AcquirerModel.cs" />
+    <Compile Include="Model\ConfirmMessageModel.cs" />
+    <Compile Include="Model\DataUserModel.cs" />
+    <Compile Include="Model\ItemModel.cs" />
+    <Compile Include="Model\MessageModel.cs" />
+    <Compile Include="Model\PostModel.cs" />
+    <Compile Include="Model\RecyclePlanModel.cs" />
+    <Compile Include="Model\RewardModel.cs" />
+    <Compile Include="Model\UnloadModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Service References\LocationServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RouteServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SearchServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\LinqToVisualTree.cs" />
+    <Compile Include="Tools\ListAnimation.cs" />
+    <Compile Include="Tools\MetroInMotion.cs" />
+    <Compile Include="ViewModel\AcquirerVM.cs" />
+    <Compile Include="ViewModel\DataVM.cs" />
+    <Compile Include="ViewModel\FriendVM.cs" />
+    <Compile Include="ViewModel\MessageVM.cs" />
+    <Compile Include="ViewModel\RecyclePlanVM.cs" />
+    <Compile Include="ViewModel\RecycleVM.cs" />
+    <Compile Include="ViewModel\RewardVM.cs" />
+    <Compile Include="ViewModel\VolunteePlanVM.cs" />
+    <Compile Include="ViewModel\VolunteerVM.cs" />
+    <Compile Include="Views\AcquirerPage.xaml.cs">
+      <DependentUpon>AcquirerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataPage.xaml.cs">
+      <DependentUpon>DataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataPage1.xaml.cs">
+      <DependentUpon>DataPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FriendPage.xaml.cs">
+      <DependentUpon>FriendPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\MessagePage.xaml.cs">
+      <DependentUpon>MessagePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PostPage.xaml.cs">
+      <DependentUpon>PostPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PostSuccessPage.xaml.cs">
+      <DependentUpon>PostSuccessPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PublisherRegisterPage.xaml.cs">
+      <DependentUpon>PublisherRegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecyclePage.xaml.cs">
+      <DependentUpon>RecyclePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RenRenFriendTest.xaml.cs">
+      <DependentUpon>RenRenFriendTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RewardPage.xaml.cs">
+      <DependentUpon>RewardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestPage.xaml.cs">
+      <DependentUpon>TestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestPage1.xaml.cs">
+      <DependentUpon>TestPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VolunteerPage.xaml.cs">
+      <DependentUpon>VolunteerPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Controls\Acquirer_Category.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Acquirer_Detail1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Acquirer_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Acquirer_TimeMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Friend_Photo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Post_FillMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RecyclePlanDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Recycle_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Recycle_Menu_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Recycle_Menu_detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Recycle_Menu_SendMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Recycle_Message.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Acquirer_Message.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Reward_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Reward_Menu_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Reward_Menu_Detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Tile1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Tile2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Tile3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RecyclePlan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\VolunteerPlan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AcquirerPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FriendPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MessagePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PostPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PostSuccessPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PublisherRegisterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecyclePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RenRenFriendTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RewardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TestPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VolunteerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LocationServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\LocationServiceReference\configuration.svcinfo" />
+    <None Include="Service References\LocationServiceReference\Panda.Phone.Publisher.LocationServiceReference.GeocodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LocationServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="icon.jpg" />
+    <Content Include="icon\category.png" />
+    <Content Include="icon\category_a.png" />
+    <Content Include="icon\mail.png" />
+    <Content Include="icon\mail_active.png" />
+    <Content Include="icon\plan.png" />
+    <Content Include="icon\plan_a.png" />
+    <Content Include="icon\recycle_list.png" />
+    <Content Include="icon\recycle_list_a.png" />
+    <Content Include="icon\reward_list.png" />
+    <Content Include="icon\reward_list_a.png" />
+    <Content Include="icon\select.png" />
+    <Content Include="icon\select_a.png" />
+    <Content Include="icon\setting.png" />
+    <Content Include="icon\setting_a.png" />
+    <Content Include="Image_Acquirer\plan.png" />
+    <Content Include="Image_Acquirer\plan_a.png" />
+    <Content Include="Image_Data\tree\1.png" />
+    <Content Include="Image_Data\tree\10.png" />
+    <Content Include="Image_Data\tree\2.png" />
+    <Content Include="Image_Data\tree\3.png" />
+    <Content Include="Image_Data\tree\4.png" />
+    <Content Include="Image_Data\tree\5.png" />
+    <Content Include="Image_Data\tree\6.png" />
+    <Content Include="Image_Data\tree\7.png" />
+    <Content Include="Image_Data\tree\8.png" />
+    <Content Include="Image_Data\tree\9.png" />
+    <Content Include="Image_Friends\co2.png" />
+    <Content Include="Image_Friends\crown\E_Waste.png" />
+    <Content Include="Image_Friends\crown\Glass.png" />
+    <Content Include="Image_Friends\crown\Metal.png" />
+    <Content Include="Image_Friends\crown\Paper.png" />
+    <Content Include="Image_Friends\crown\Plastic.png" />
+    <Content Include="Image_Friends\electric.png" />
+    <Content Include="Image_Friends\top\1.png" />
+    <Content Include="Image_Friends\top\10.png" />
+    <Content Include="Image_Friends\top\2.png" />
+    <Content Include="Image_Friends\top\3.png" />
+    <Content Include="Image_Friends\top\4.png" />
+    <Content Include="Image_Friends\top\5.png" />
+    <Content Include="Image_Friends\top\6.png" />
+    <Content Include="Image_Friends\top\7.png" />
+    <Content Include="Image_Friends\top\8.png" />
+    <Content Include="Image_Friends\top\9.png" />
+    <Content Include="Image_Friends\trees.png" />
+    <Content Include="Image_Home\bg_k.png" />
+    <Content Include="Image_Home\bg_m.png" />
+    <Content Include="Image_Home\knowledge.png" />
+    <Content Include="Image_Home\message.png" />
+    <Content Include="Image_Home\volunteer.png" />
+    <Content Include="Image_Login\bg.jpg" />
+    <Content Include="Image_Login\input_long.png" />
+    <Content Include="Image_Login\input_short.png" />
+    <Content Include="Image_Login\logo.png" />
+    <Content Include="Image_Login\map.png" />
+    <Content Include="Image_Login\portrait.png" />
+    <Content Include="Image_Login\RenRenLogin.png" />
+    <Content Include="Image_Login\select.png" />
+    <Content Include="Image_Login\unselect.png" />
+    <Content Include="Image_Post\appbar.cancel.rest.png" />
+    <Content Include="Image_Post\appbar.check.rest.png" />
+    <Content Include="Image_Post\arrow1_active.png" />
+    <Content Include="Image_Post\Share\1.jpg" />
+    <Content Include="Image_Post\Share\2.jpg" />
+    <Content Include="Image_Post\Share\3.jpg" />
+    <Content Include="Image_Recycle\Menu\triangle1.png" />
+    <Content Include="Image_Recycle\Menu\wp7_recyle_info.png" />
+    <Content Include="Image_Recycle\RewardItem\baby.jpg" />
+    <Content Include="Image_Recycle\RewardItem\discount.png" />
+    <Content Include="Image_Recycle\RewardItem\glasses.jpg" />
+    <Content Include="Image_Recycle\RewardItem\kfc.jpg" />
+    <Content Include="Image_Recycle\RewardItem\nothing1.jpg" />
+    <Content Include="Image_Recycle\RewardItem\surpermarket.jpg" />
+    <None Include="Service References\SearchServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\SearchServiceReference\configuration.svcinfo" />
+    <None Include="Service References\SearchServiceReference\Panda.Phone.Publisher.SearchServiceReference.SearchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SearchServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Image_Recycle\RewardItem\wp7_points.jpg" />
+    <Content Include="Image_Reward\pic.png" />
+    <Content Include="Image_Reward\pic2.png" />
+    <Content Include="Image_Reward\pic3.png" />
+    <Content Include="Image_Reward\point.png" />
+    <Content Include="Image_Reward\search.png" />
+    <Content Include="Image_Reward\search1.png" />
+    <Content Include="Image_Volunteer\bg.png" />
+    <Content Include="Image_Volunteer\finished.png" />
+    <Content Include="Image_Volunteer\gou.png" />
+    <Content Include="Image_Volunteer\leaf_green.png" />
+    <Content Include="Image_Volunteer\leaf_yellow.png" />
+    <Content Include="Image_Volunteer\line.png" />
+    <Content Include="Image_Volunteer\line_2.png" />
+    <Content Include="Image_Volunteer\mail.png" />
+    <Content Include="Image_Volunteer\mail1.png" />
+    <Content Include="Image_Volunteer\poi.png" />
+    <Content Include="Image_Volunteer\poi1.png" />
+    <Content Include="Image_Volunteer\plan.png" />
+    <Content Include="Image_Volunteer\plan_a.png" />
+    <Content Include="Image_Volunteer\route.png" />
+    <Content Include="Image_Volunteer\X.png" />
+    <Content Include="tile.jpg" />
+    <Content Include="tile3.jpg" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Acquirer\bg.png" />
+    <Content Include="Image_Acquirer\Category\1.png" />
+    <Content Include="Image_Acquirer\Category\11.png" />
+    <Content Include="Image_Acquirer\Category\2.png" />
+    <Content Include="Image_Acquirer\Category\22.png" />
+    <Content Include="Image_Acquirer\Category\3.png" />
+    <Content Include="Image_Acquirer\Category\33.png" />
+    <Content Include="Image_Acquirer\Category\4.png" />
+    <Content Include="Image_Acquirer\Category\44.png" />
+    <Content Include="Image_Acquirer\Category\5.png" />
+    <Content Include="Image_Acquirer\Category\55.png" />
+    <Content Include="Image_Acquirer\Category\6.png" />
+    <Content Include="Image_Acquirer\Category\66.png" />
+    <Content Include="Image_Acquirer\choicepin.png" />
+    <Content Include="Image_Acquirer\Detail\2.png" />
+    <Content Include="Image_Acquirer\Detail\ItemImage\1.jpg" />
+    <Content Include="Image_Acquirer\Detail\ItemImage\2.jpg" />
+    <Content Include="Image_Acquirer\Detail\ItemImage\3.jpg" />
+    <Content Include="Image_Acquirer\Detail\ItemImage\4.jpg" />
+    <Content Include="Image_Acquirer\Detail\ItemImage\5.jpg" />
+    <Content Include="Image_Acquirer\Detail\X.png" />
+    <Content Include="Image_Acquirer\Detail\X_active.png" />
+    <Content Include="Image_Acquirer\history.png" />
+    <Content Include="Image_Acquirer\history1.png" />
+    <Content Include="Image_Acquirer\man.png" />
+    <Content Include="Image_Acquirer\Menu\wp7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Acquirer\message.png" />
+    <Content Include="Image_Acquirer\message1.png" />
+    <Content Include="Image_Acquirer\nor.jpg" />
+    <Content Include="Image_Acquirer\sat.jpg" />
+    <Content Include="Image_Acquirer\search.jpg" />
+    <Content Include="Image_Acquirer\search_frame.jpg" />
+    <Content Include="Image_Acquirer\select_area.png" />
+    <Content Include="Image_Acquirer\select_area1.png" />
+    <Content Include="Image_Acquirer\select_r.png" />
+    <Content Include="Image_Acquirer\select_r1.png" />
+    <Content Include="Image_Acquirer\setting.png" />
+    <Content Include="Image_Acquirer\setting1.png" />
+    <Content Include="Image_Acquirer\up.jpg" />
+    <Content Include="Image_Friends\crown\Fabric.png" />
+    <Content Include="Image_Post\Post_Fill\description.png" />
+    <Content Include="Image_Post\Post_Fill\shot.png" />
+    <Content Include="Image_Post\Post_Fill\shot_active.png" />
+    <None Include="Service References\RouteServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\RouteServiceReference\configuration.svcinfo" />
+    <None Include="Service References\RouteServiceReference\Panda.Phone.Publisher.RouteServiceReference.MajorRoutesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RouteServiceReference\Panda.Phone.Publisher.RouteServiceReference.RouteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RouteServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Image_Recycle\bottom_bar.png" />
+    <Content Include="Image_Recycle\bubble.png" />
+    <Content Include="Image_Recycle\close.png" />
+    <Content Include="Image_Recycle\close_active.png" />
+    <Content Include="Image_Recycle\gift.png" />
+    <Content Include="Image_Recycle\history.png" />
+    <Content Include="Image_Recycle\history_active.png" />
+    <Content Include="Image_Recycle\Menu\bg.png" />
+    <Content Include="Image_Recycle\Menu\line.png" />
+    <Content Include="Image_Recycle\Menu\m_open.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Recycle\Menu\triangle.png" />
+    <Content Include="Image_Recycle\Menu\up.jpg" />
+    <Content Include="Image_Recycle\Menu\X_active.png" />
+    <Content Include="Image_Recycle\Message\line.png" />
+    <Content Include="Image_Recycle\Message\m_closed.png" />
+    <Content Include="Image_Recycle\Message\m_open.png" />
+    <Content Include="Image_Recycle\Message\up.jpg" />
+    <Content Include="Image_Recycle\Message\X_active.png" />
+    <Content Include="Image_Recycle\recycle_active.png" />
+    <Content Include="Image_Recycle\recycle_list.png" />
+    <Content Include="Image_Recycle\resourse.png" />
+    <Content Include="Image_Recycle\resourse_active.png" />
+    <Content Include="Image_Recycle\reward_active.png" />
+    <Content Include="Image_Recycle\reward_list.png" />
+    <Content Include="Image_Recycle\select.png" />
+    <Content Include="Image_Recycle\unselect.png" />
+    <Content Include="Image_Recycle\up_bar.png" />
+    <None Include="Service References\LocationServiceReference\Arrays.xsd" />
+    <None Include="Service References\LocationServiceReference\common.xsd" />
+    <None Include="Service References\LocationServiceReference\contracts.wsdl" />
+    <None Include="Service References\LocationServiceReference\contracts.xsd" />
+    <None Include="Service References\LocationServiceReference\geocode.wsdl" />
+    <None Include="Service References\LocationServiceReference\geocode.xsd" />
+    <None Include="Service References\LocationServiceReference\service.xsd" />
+    <None Include="Service References\RouteServiceReference\common.xsd" />
+    <None Include="Service References\RouteServiceReference\contracts.wsdl" />
+    <None Include="Service References\RouteServiceReference\contracts.xsd" />
+    <None Include="Service References\RouteServiceReference\route.wsdl" />
+    <None Include="Service References\RouteServiceReference\route.xsd" />
+    <None Include="Service References\RouteServiceReference\service.xsd" />
+    <None Include="Service References\SearchServiceReference\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SearchServiceReference\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SearchServiceReference\contracts.wsdl" />
+    <None Include="Service References\SearchServiceReference\contracts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SearchServiceReference\search.wsdl" />
+    <None Include="Service References\SearchServiceReference\search.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SearchServiceReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\Avatar\0.jpg" />
+    <Content Include="Image_Home\Avatar\1.jpg" />
+    <Content Include="Image_Home\Avatar\2.jpg" />
+    <Content Include="Image_Home\Avatar\3.jpg" />
+    <Content Include="Image_Home\Avatar\4.jpg" />
+    <Content Include="Image_Home\becle1.png" />
+    <Content Include="Image_Home\card1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\card2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\card3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\card4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\data.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\gift.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\post.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\recycle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\setting.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Home\wp7_bg.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image_Post\arrow.png" />
+    <Content Include="Image_Post\arrow1.png" />
+    <Content Include="Image_Post\arrow_active.png" />
+    <Content Include="Image_Post\bg.jpg" />
+    <Content Include="Image_Post\card1.jpg" />
+    <Content Include="Image_Post\card2.jpg" />
+    <Content Include="Image_Post\card3.jpg" />
+    <Content Include="Image_Post\card4.jpg" />
+    <Content Include="Image_Home\choose.png" />
+    <Content Include="Image_Post\e_waste.png" />
+    <Content Include="Image_Post\fabric.png" />
+    <Content Include="Image_Post\glass.png" />
+    <Content Include="Image_Post\metal.png" />
+    <Content Include="Image_Post\paper.png" />
+    <Content Include="Image_Post\plastic.png" />
+    <Content Include="Image_Post\Post_Fill\bg_1px.png" />
+    <Content Include="Image_Post\Post_Fill\input.png" />
+    <Content Include="Image_Post\Post_Fill\OK.png" />
+    <Content Include="Image_Post\Post_Fill\triangle1.png" />
+    <Content Include="Image_Post\Post_Fill\triangle2.png" />
+    <Content Include="Image_Post\Post_Fill\wp7_post_info.jpg" />
+    <Content Include="Image_Post\Post_Fill\x.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\LocationServiceReference\" />
+    <WCFMetadataStorage Include="Service References\RouteServiceReference\" />
+    <WCFMetadataStorage Include="Service References\SearchServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\C#ebook\Win Phone 7\Renren-api-wp7-sdk-2.0\RenrenSDKLibrary\RenrenSDKLibrary.csproj">
+      <Project>{A0DAF137-14D2-4F92-B438-A449FCC48D09}</Project>
+      <Name>RenrenSDKLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

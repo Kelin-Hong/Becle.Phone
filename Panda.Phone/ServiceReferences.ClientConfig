@@ -1,0 +1,22 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="PhoneService" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="PushNotification" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://5.5.5.122:8080/PhoneService" binding="basicHttpBinding"
+                bindingConfiguration="PhoneService" contract="ServiceReference.IPhoneService"
+                name="PhoneService" />
+            <endpoint address="http://5.5.5.122:8080/PhoneService/PushNotification"
+                binding="basicHttpBinding" bindingConfiguration="PushNotification"
+                contract="ServiceReference.IPushNotificationService" name="PushNotification" />
+        </client>
+    </system.serviceModel>
+</configuration>

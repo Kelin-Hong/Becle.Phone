@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Panda.Phone.Publisher.Controls.Reward_Menu_1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="250" d:DesignWidth="350">
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image_Acquirer/Menu/wp7.png"></ImageBrush>
+        </Grid.Background>
+        <Grid Height="40" VerticalAlignment="Top" DataContext="{Binding}" Tap="btn_Close_Tap">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Image_Recycle/Menu/up.jpg"/>
+            </Grid.Background>
+            <Border HorizontalAlignment="Left" Height="30">
+                <TextBlock Margin="5,0" x:Name="tbk_UserName" FontSize="22"   Text="Information" FontWeight="Black" FontFamily="Microsoft NeoGothic" />
+            </Border>
+            <Image x:Name="btn_Close" Height="20" Width="20" Margin="0,0,5,0" Source="/Image_Recycle/Menu/X_active.png" HorizontalAlignment="Right" Tap="btn_Close_Tap"/>
+        </Grid>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="image_Item" Margin="10,-60,0,0" Source="/Image_Recycle/RewardItem/glasses.jpg" Width="100" Height="100" Stretch="Fill"/>
+          <StackPanel Orientation="Vertical" Margin="5,40,5,5">
+                <Image  Source="/Image_Recycle/Menu/line.png" HorizontalAlignment="Left" Width="200"/>
+                <StackPanel Orientation="Horizontal" Margin="2">
+                   
+                    <TextBlock x:Name="tbk_Phone" Margin="2" Text="15527263237"/>
+                </StackPanel>
+                <Image Source="/Image_Recycle/Menu/line.png" HorizontalAlignment="Left" Width="300"/>
+                <StackPanel Orientation="Vertical" Margin="2">
+           
+                   <TextBlock  x:Name="tbk_Address"  Width="200" TextWrapping="Wrap" Text=" Hust qin yu " HorizontalAlignment="Left" FontFamily="Microsoft NeoGothic" />
+                </StackPanel>
+                <Image Source="/Image_Recycle/Menu/line.png" HorizontalAlignment="Left" Width="300"/>
+                <ScrollViewer Height="150" Width="220" HorizontalAlignment="Left">
+                    <TextBlock HorizontalAlignment="Left" x:Name="tbk_Describe"   TextWrapping="Wrap" FontFamily="Microsoft NeoGothic" />
+                </ScrollViewer>
+                <!--<StackPanel Orientation="Horizontal" Margin="2">
+                    <TextBlock Text="Describe: "/>
+                   
+                </StackPanel>-->
+         
+          </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

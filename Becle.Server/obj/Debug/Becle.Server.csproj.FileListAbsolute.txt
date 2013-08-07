@@ -1,0 +1,24 @@
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Becle.Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll.config
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.pdb
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\WindowsPhone_Application\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.pdb
+C:\Users\hkl\Desktop\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll.config
+C:\Users\hkl\Desktop\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll
+C:\Users\hkl\Desktop\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.pdb
+C:\Users\hkl\Desktop\Panda.Phone\Becle.Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hkl\Desktop\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.dll
+C:\Users\hkl\Desktop\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.pdb
+F:\my project\Becle.Phone\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll.config
+F:\my project\Becle.Phone\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll
+F:\my project\Becle.Phone\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.pdb
+F:\my project\Becle.Phone\Panda.Phone\Becle.Server\obj\Debug\ResolveAssemblyReference.cache
+F:\my project\Becle.Phone\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.dll
+F:\my project\Becle.Phone\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.pdb
+F:\Project\Becle.Phone\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll.config
+F:\Project\Becle.Phone\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.dll
+F:\Project\Becle.Phone\Panda.Phone\Becle.Server\bin\Debug\Becle.Server.pdb
+F:\Project\Becle.Phone\Panda.Phone\Becle.Server\obj\Debug\ResolveAssemblyReference.cache
+F:\Project\Becle.Phone\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.dll
+F:\Project\Becle.Phone\Panda.Phone\Becle.Server\obj\Debug\Becle.Server.pdb

@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Panda.Phone.Publisher.Controls.Recycle_Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:controls="clr-namespace:Panda.Phone.Publisher.Controls"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="600" d:DesignWidth="480">
+    <UserControl.Resources>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Microsoft NeoGothic"/>
+        </Style>
+
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot">
+        <!--<Grid Height="35" VerticalAlignment="Top" DataContext="{Binding}">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Image_Recycle/Menu/up.jpg"/>
+            </Grid.Background>
+            <Border HorizontalAlignment="Left" Height="30"> 
+                <TextBlock Text="{Binding Path=Title}"/>
+            </Border>
+            <Image x:Name="btn_Close" Height="30" Width="30" Source="/Image_Recycle/Menu/X_active.png" HorizontalAlignment="Right" Tap="btn_Close_Tap"/>
+        </Grid>-->
+        <TextBlock Text="Recycle List"  Margin="20,30" FontWeight="ExtraBold" FontSize="45"/>
+        <ListBox x:Name="list_Bin" Margin="30,110,30,200"  DataContext="{Binding}" ItemsSource="{Binding Path=List_Acquirers}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical"  >
+                      
+                        <StackPanel Orientation="Horizontal" Margin="15" Tap="StackPanel_Tap">
+                            <Image Source="/Image_Recycle/Menu/triangle1.png"/>
+                            <TextBlock FontSize="30" Text="{Binding Path=BinName}"/>
+                       </StackPanel >
+                        <controls:Recycle_Menu_detail Tap="Recycle_Menu_detail_Tap" UserName="{Binding Path=AcquirerName}" Address="{Binding Path=Address}"  Phone="{Binding Path=Phone}" Visibility="Collapsed" Width="360" HorizontalAlignment="Right"/>
+                        <Image Stretch="Fill" Source="/Image_Recycle/Menu/line.png" Width="400"/>
+                        
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        </Grid>
+</UserControl>

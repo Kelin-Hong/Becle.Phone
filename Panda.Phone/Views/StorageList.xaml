@@ -1,0 +1,59 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:lightToolkit="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP71"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:views="clr-namespace:Panda.Phone.Views"
+   
+    xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions" 
+	x:Class="Panda.Phone.Views.StorageList"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <DataTemplate x:Key="ListItem">
+                <views:StorageItems/>
+            </DataTemplate>
+          
+        </Grid.Resources>
+        <ListBox x:Name="listbox"  
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto" >
+         
+            <ListBox.Items>
+                <StackPanel Orientation="Horizontal" Background="Transparent">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseLeftButtonDown">
+                            <ec:NavigateToPageAction TargetPage="/Views/PublishPage.xaml"></ec:NavigateToPageAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Image Height="90" Width="90" Source="/Images/Person.png"/>
+                    <TextBlock Text="Publish" Margin="10,20,0,20"/>
+                </StackPanel>
+                 <StackPanel Orientation="Horizontal" Background="Transparent">
+                    <Image Height="90" Width="90" Source="/Images/Person.png"/>
+                 <TextBlock  Text="History" Margin="10,20,0,20"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Transparent">
+                    <Image Height="90" Width="90" Source="/Images/Person.png"/>
+                    <TextBlock  Text="Count" Margin="10,20,0,20"/>
+                </StackPanel>
+       </ListBox.Items>
+            <!--<i:Interaction.Triggers>
+            
+                <i:EventTrigger EventName="SelectionChanged">
+                    <lightToolkit:EventToCommand Command="{Binding selectChangedCommand, Mode=OneWay}"
+                                                 CommandParameter="{Binding SelectedItem, ElementName=listbox}"/>
+                </i:EventTrigger>
+              
+            </i:Interaction.Triggers>-->
+        </ListBox>
+    </Grid>
+</UserControl>

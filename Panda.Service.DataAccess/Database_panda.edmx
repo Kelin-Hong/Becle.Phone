@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Database_PandaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Database_PandaModelStoreContainer">
+          <EntitySet Name="Activities" EntityType="Database_PandaModel.Store.Activities" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Activity_Citys" EntityType="Database_PandaModel.Store.Activity_Citys" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Cities" EntityType="Database_PandaModel.Store.Cities" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Educations" EntityType="Database_PandaModel.Store.Educations" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FriendRelations" EntityType="Database_PandaModel.Store.FriendRelations" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Items" EntityType="Database_PandaModel.Store.Items" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Location_Items" EntityType="Database_PandaModel.Store.Location_Items" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Locations" EntityType="Database_PandaModel.Store.Locations" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Medals" EntityType="Database_PandaModel.Store.Medals" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Recycles" EntityType="Database_PandaModel.Store.Recycles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Trashes" EntityType="Database_PandaModel.Store.Trashes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User_Events" EntityType="Database_PandaModel.Store.User_Events" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User_Items" EntityType="Database_PandaModel.Store.User_Items" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User_Medals" EntityType="Database_PandaModel.Store.User_Medals" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserInfos" EntityType="Database_PandaModel.Store.UserInfos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Varieties" EntityType="Database_PandaModel.Store.Varieties" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Activities">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Summary" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="EndTime" Type="datetime" Nullable="false" />
+          <Property Name="Host" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="IsSeen" Type="bit" Nullable="false" />
+          <Property Name="IsLocal" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Activity_Citys">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CityId" Type="int" Nullable="false" />
+          <Property Name="ActivityId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CityName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Cities">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Name="CityId" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Educations">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="Editor" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="IsSeen" Type="bit" Nullable="false" />
+          <Property Name="IsLocal" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FriendRelations">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FriendId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsFocus" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Items">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="TypeId" Type="int" Nullable="false" />
+          <Property Name="TrashId" Type="int" Nullable="false" />
+          <Property Name="ImagePath" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="IsDeal" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Location_Items">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="TypeId" Type="int" Nullable="false" />
+          <Property Name="TrashId" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="ItemName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="LastClearTime" Type="datetime" />
+          <Property Name="LastAddTime" Type="datetime" />
+          <Property Name="Price" Type="decimal" Nullable="false" Scale="2" />
+        </EntityType>
+        <EntityType Name="Locations">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="CallCount" Type="int" Nullable="false" />
+          <Property Name="ConfirmCount" Type="int" Nullable="false" />
+          <Property Name="UnConfirmCount" Type="int" Nullable="false" />
+          <Property Name="CallRecycleCount" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="LastClearTime" Type="datetime" />
+          <Property Name="LastAddTime" Type="datetime" />
+          <Property Name="LastRecycleTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Medals">
+          <Key>
+            <PropertyRef Name="MedalId" />
+          </Key>
+          <Property Name="MedalId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="ImagePath" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Rank" Type="int" Nullable="false" />
+          <Property Name="Type" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Recycles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RecycleMan" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="EndTime" Type="datetime" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Trashes">
+          <Key>
+            <PropertyRef Name="TrashId" />
+          </Key>
+          <Property Name="TrashId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TypeId" Type="int" Nullable="false" />
+          <Property Name="CanCount" Type="bit" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="DefaultPrice" Type="decimal" Nullable="false" Scale="2" />
+        </EntityType>
+        <EntityType Name="User_Events">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Content" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="IsSeen" Type="bit" Nullable="false" />
+          <Property Name="GoodCount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User_Items">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ItemName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TypeId" Type="int" Nullable="false" />
+          <Property Name="TrashId" Type="int" Nullable="false" />
+          <Property Name="ItemAmount" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="ModifyTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User_Medals">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Type" Type="int" Nullable="false" />
+          <Property Name="IsShown" Type="bit" Nullable="false" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="Rank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserInfos">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Point" Type="int" Nullable="false" />
+          <Property Name="DealCount" Type="int" Nullable="false" />
+          <Property Name="UploadCount" Type="int" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+          <Property Name="Type" Type="int" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+          <Property Name="Country" Type="int" Nullable="false" />
+          <Property Name="Province" Type="int" Nullable="false" />
+          <Property Name="City" Type="int" Nullable="false" />
+          <Property Name="Town" Type="int" Nullable="false" />
+          <Property Name="Street" Type="int" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ImagePath" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="HasCustome" Type="bit" Nullable="false" />
+          <Property Name="AllRank" Type="int" Nullable="false" />
+          <Property Name="LastAllRank" Type="int" Nullable="false" />
+          <Property Name="LastCallTime" Type="datetime" Nullable="false" />
+          <Property Name="CityRank" Type="int" Nullable="false" />
+          <Property Name="LastCityRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Varieties">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Database_PandaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Database_PandaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Activities" EntityType="Database_PandaModel.Activity" />
+          <EntitySet Name="Activity_Citys" EntityType="Database_PandaModel.Activity_City" />
+          <EntitySet Name="Cities" EntityType="Database_PandaModel.City" />
+          <EntitySet Name="Educations" EntityType="Database_PandaModel.Education" />
+          <EntitySet Name="FriendRelations" EntityType="Database_PandaModel.FriendRelation" />
+          <EntitySet Name="Items" EntityType="Database_PandaModel.Item" />
+          <EntitySet Name="Location_Items" EntityType="Database_PandaModel.Location_Item" />
+          <EntitySet Name="Locations" EntityType="Database_PandaModel.Location" />
+          <EntitySet Name="Medals" EntityType="Database_PandaModel.Medal" />
+          <EntitySet Name="Recycles" EntityType="Database_PandaModel.Recycle" />
+          <EntitySet Name="Trashes" EntityType="Database_PandaModel.Trash" />
+          <EntitySet Name="User_Events" EntityType="Database_PandaModel.User_Event" />
+          <EntitySet Name="User_Items" EntityType="Database_PandaModel.User_Item" />
+          <EntitySet Name="User_Medals" EntityType="Database_PandaModel.User_Medal" />
+          <EntitySet Name="UserInfos" EntityType="Database_PandaModel.UserInfo" />
+          <EntitySet Name="Varieties" EntityType="Database_PandaModel.Variety" />
+        </EntityContainer>
+        <EntityType Name="Activity">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Summary" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" />
+          <Property Name="EndTime" Type="DateTime" Nullable="false" />
+          <Property Name="Host" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsSeen" Type="Boolean" Nullable="false" />
+          <Property Name="IsLocal" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Activity_City">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CityId" Type="Int32" Nullable="false" />
+          <Property Name="ActivityId" Type="Guid" Nullable="false" />
+          <Property Name="CityName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Name="CityId" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Education">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+          <Property Name="Editor" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsSeen" Type="Boolean" Nullable="false" />
+          <Property Name="IsLocal" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FriendRelation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FriendId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsFocus" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="Guid" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="TypeId" Type="Int32" Nullable="false" />
+          <Property Name="TrashId" Type="Int32" Nullable="false" />
+          <Property Name="ImagePath" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+          <Property Name="IsDeal" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Location_Item">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="TypeId" Type="Int32" Nullable="false" />
+          <Property Name="TrashId" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="LastClearTime" Type="DateTime" />
+          <Property Name="LastAddTime" Type="DateTime" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="CallCount" Type="Int32" Nullable="false" />
+          <Property Name="ConfirmCount" Type="Int32" Nullable="false" />
+          <Property Name="UnConfirmCount" Type="Int32" Nullable="false" />
+          <Property Name="CallRecycleCount" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="LastClearTime" Type="DateTime" />
+          <Property Name="LastAddTime" Type="DateTime" />
+          <Property Name="LastRecycleTime" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Medal">
+          <Key>
+            <PropertyRef Name="MedalId" />
+          </Key>
+          <Property Name="MedalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="ImagePath" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Rank" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Recycle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="RecycleMan" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" />
+          <Property Name="EndTime" Type="DateTime" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Trash">
+          <Key>
+            <PropertyRef Name="TrashId" />
+          </Key>
+          <Property Name="TrashId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TypeId" Type="Int32" Nullable="false" />
+          <Property Name="CanCount" Type="Boolean" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="DefaultPrice" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="User_Event">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Content" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+          <Property Name="IsSeen" Type="Boolean" Nullable="false" />
+          <Property Name="GoodCount" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User_Item">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ItemName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TypeId" Type="Int32" Nullable="false" />
+          <Property Name="TrashId" Type="Int32" Nullable="false" />
+          <Property Name="ItemAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="ModifyTime" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User_Medal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="IsShown" Type="Boolean" Nullable="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" />
+          <Property Name="Rank" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Point" Type="Int32" Nullable="false" />
+          <Property Name="DealCount" Type="Int32" Nullable="false" />
+          <Property Name="UploadCount" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="Country" Type="Int32" Nullable="false" />
+          <Property Name="Province" Type="Int32" Nullable="false" />
+          <Property Name="City" Type="Int32" Nullable="false" />
+          <Property Name="Town" Type="Int32" Nullable="false" />
+          <Property Name="Street" Type="Int32" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ImagePath" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="BirthDate" Type="DateTime" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+          <Property Name="HasCustome" Type="Boolean" Nullable="false" />
+          <Property Name="AllRank" Type="Int32" Nullable="false" />
+          <Property Name="LastAllRank" Type="Int32" Nullable="false" />
+          <Property Name="LastCallTime" Type="DateTime" Nullable="false" />
+          <Property Name="CityRank" Type="Int32" Nullable="false" />
+          <Property Name="LastCityRank" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Variety">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Database_PandaModelStoreContainer" CdmEntityContainer="Database_PandaEntities">
+          <EntitySetMapping Name="Activities"><EntityTypeMapping TypeName="Database_PandaModel.Activity"><MappingFragment StoreEntitySet="Activities">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Content" ColumnName="Content" />
+            <ScalarProperty Name="Summary" ColumnName="Summary" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+            <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+            <ScalarProperty Name="Host" ColumnName="Host" />
+            <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+            <ScalarProperty Name="IsLocal" ColumnName="IsLocal" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Activity_Citys"><EntityTypeMapping TypeName="Database_PandaModel.Activity_City"><MappingFragment StoreEntitySet="Activity_Citys">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="CityId" ColumnName="CityId" />
+            <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+            <ScalarProperty Name="CityName" ColumnName="CityName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Cities"><EntityTypeMapping TypeName="Database_PandaModel.City"><MappingFragment StoreEntitySet="Cities">
+            <ScalarProperty Name="CityId" ColumnName="CityId" />
+            <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Educations"><EntityTypeMapping TypeName="Database_PandaModel.Education"><MappingFragment StoreEntitySet="Educations">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="Editor" ColumnName="Editor" />
+            <ScalarProperty Name="Content" ColumnName="Content" />
+            <ScalarProperty Name="Title" ColumnName="Title" />
+            <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+            <ScalarProperty Name="IsLocal" ColumnName="IsLocal" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="FriendRelations"><EntityTypeMapping TypeName="Database_PandaModel.FriendRelation"><MappingFragment StoreEntitySet="FriendRelations">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="FriendId" ColumnName="FriendId" />
+            <ScalarProperty Name="IsFocus" ColumnName="IsFocus" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Items"><EntityTypeMapping TypeName="Database_PandaModel.Item"><MappingFragment StoreEntitySet="Items">
+            <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+            <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+            <ScalarProperty Name="TrashId" ColumnName="TrashId" />
+            <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="IsDeal" ColumnName="IsDeal" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Location_Items"><EntityTypeMapping TypeName="Database_PandaModel.Location_Item"><MappingFragment StoreEntitySet="Location_Items">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+            <ScalarProperty Name="TrashId" ColumnName="TrashId" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="LastClearTime" ColumnName="LastClearTime" />
+            <ScalarProperty Name="LastAddTime" ColumnName="LastAddTime" />
+            <ScalarProperty Name="Price" ColumnName="Price" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Locations"><EntityTypeMapping TypeName="Database_PandaModel.Location"><MappingFragment StoreEntitySet="Locations">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="CallCount" ColumnName="CallCount" />
+            <ScalarProperty Name="ConfirmCount" ColumnName="ConfirmCount" />
+            <ScalarProperty Name="UnConfirmCount" ColumnName="UnConfirmCount" />
+            <ScalarProperty Name="CallRecycleCount" ColumnName="CallRecycleCount" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+            <ScalarProperty Name="LastClearTime" ColumnName="LastClearTime" />
+            <ScalarProperty Name="LastAddTime" ColumnName="LastAddTime" />
+            <ScalarProperty Name="LastRecycleTime" ColumnName="LastRecycleTime" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Medals"><EntityTypeMapping TypeName="Database_PandaModel.Medal"><MappingFragment StoreEntitySet="Medals">
+            <ScalarProperty Name="MedalId" ColumnName="MedalId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+            <ScalarProperty Name="Rank" ColumnName="Rank" />
+            <ScalarProperty Name="Type" ColumnName="Type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Recycles"><EntityTypeMapping TypeName="Database_PandaModel.Recycle"><MappingFragment StoreEntitySet="Recycles">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="RecycleMan" ColumnName="RecycleMan" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+            <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Trashes"><EntityTypeMapping TypeName="Database_PandaModel.Trash"><MappingFragment StoreEntitySet="Trashes">
+            <ScalarProperty Name="TrashId" ColumnName="TrashId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+            <ScalarProperty Name="CanCount" ColumnName="CanCount" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="DefaultPrice" ColumnName="DefaultPrice" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="User_Events"><EntityTypeMapping TypeName="Database_PandaModel.User_Event"><MappingFragment StoreEntitySet="User_Events">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Content" ColumnName="Content" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="IsSeen" ColumnName="IsSeen" />
+            <ScalarProperty Name="GoodCount" ColumnName="GoodCount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="User_Items"><EntityTypeMapping TypeName="Database_PandaModel.User_Item"><MappingFragment StoreEntitySet="User_Items">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+            <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+            <ScalarProperty Name="TrashId" ColumnName="TrashId" />
+            <ScalarProperty Name="ItemAmount" ColumnName="ItemAmount" />
+            <ScalarProperty Name="ModifyTime" ColumnName="ModifyTime" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="User_Medals"><EntityTypeMapping TypeName="Database_PandaModel.User_Medal"><MappingFragment StoreEntitySet="User_Medals">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Type" ColumnName="Type" />
+            <ScalarProperty Name="IsShown" ColumnName="IsShown" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="Rank" ColumnName="Rank" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UserInfos"><EntityTypeMapping TypeName="Database_PandaModel.UserInfo"><MappingFragment StoreEntitySet="UserInfos">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="Point" ColumnName="Point" />
+            <ScalarProperty Name="DealCount" ColumnName="DealCount" />
+            <ScalarProperty Name="UploadCount" ColumnName="UploadCount" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="Type" ColumnName="Type" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+            <ScalarProperty Name="Country" ColumnName="Country" />
+            <ScalarProperty Name="Province" ColumnName="Province" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="Town" ColumnName="Town" />
+            <ScalarProperty Name="Street" ColumnName="Street" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+            <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="HasCustome" ColumnName="HasCustome" />
+            <ScalarProperty Name="AllRank" ColumnName="AllRank" />
+            <ScalarProperty Name="LastAllRank" ColumnName="LastAllRank" />
+            <ScalarProperty Name="LastCallTime" ColumnName="LastCallTime" />
+            <ScalarProperty Name="CityRank" ColumnName="CityRank" />
+            <ScalarProperty Name="LastCityRank" ColumnName="LastCityRank" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Varieties"><EntityTypeMapping TypeName="Database_PandaModel.Variety"><MappingFragment StoreEntitySet="Varieties">
+            <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Database_panda">
+        <EntityTypeShape EntityType="Database_PandaModel.Activity" Width="1.5" PointX="0.75" PointY="0.75" Height="2.7341113281249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Activity_City" Width="1.5" PointX="2.75" PointY="0.75" Height="1.7790128580729174" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.City" Width="1.5" PointX="2.75" PointY="3.75" Height="1.5879931640624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Education" Width="1.5" PointX="4.75" PointY="0.75" Height="2.3520719401041656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.FriendRelation" Width="1.5" PointX="4.75" PointY="4.75" Height="1.9700325520833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Item" Width="1.5" PointX="6.75" PointY="0.75" Height="3.4981901041666665" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Location_Item" Width="1.5" PointX="0.75" PointY="6.75" Height="3.1161507161458317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Location" Width="1.5" PointX="6.75" PointY="5.75" Height="3.3071704101562496" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Medal" Width="1.5" PointX="2.75" PointY="7.75" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Recycle" Width="1.5" PointX="8.75" PointY="0.75" Height="2.5430916341145853" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Trash" Width="1.5" PointX="8.75" PointY="4.75" Height="2.1610522460937531" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.User_Event" Width="1.5" PointX="8.75" PointY="7.75" Height="2.1610522460937531" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.User_Item" Width="1.5" PointX="10.75" PointY="0.75" Height="2.3520719401041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.User_Medal" Width="1.5" PointX="0.75" PointY="10.75" Height="2.1610522460937531" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.UserInfo" Width="1.5" PointX="2.75" PointY="10.75" Height="5.7904264322916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database_PandaModel.Variety" Width="1.5" PointX="10.75" PointY="4.75" Height="1.5879931640625031" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

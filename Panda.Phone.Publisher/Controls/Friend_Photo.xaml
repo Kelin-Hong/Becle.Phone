@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Panda.Phone.Publisher.Controls.Friend_Photo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="173" d:DesignWidth="173">
+    <Grid x:Name="grid_Content" Height="173" Width="173" toolkit:TiltEffect.IsTiltEnabled="True">
+        <toolkit:HubTile x:Name="hubTile"   ></toolkit:HubTile>
+    </Grid>
+ 
+    <!--<StackPanel Orientation="Vertical" Height="170" Width="190">
+            <Image x:Name="image_Waste" Height="135" Width="190" Stretch="Fill"></Image>
+            <StackPanel Background="#FF6BC239">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock ><Run x:Name="name"  Text="34" FontSize="20" FontWeight="Bold"></Run></TextBlock>
+                <TextBlock Width="165" TextWrapping="Wrap" FontSize="18" Text="223334dfsfsfdsfsfsggsgsdgggsgdgdsgdsd" x:Name="describe" ></TextBlock> 
+            </StackPanel>
+           
+            </StackPanel>
+        </StackPanel>-->
+ 
+</UserControl>

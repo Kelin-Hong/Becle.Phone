@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Panda.Phone.Views.FriendsItems"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="90" d:DesignWidth="150">
+
+    <StackPanel x:Name="LayoutRoot" Orientation="Horizontal" Background="Transparent">
+        <Image Height="90" Width="90" Source="/Images/Person.png"></Image>
+        <StackPanel Margin="12,0,12,0" Orientation="Vertical">
+            <TextBlock x:Name="NameField" Text="{Binding Path=Name, Mode=OneWay}" Margin="5,30,0,0" FontSize="28"></TextBlock>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

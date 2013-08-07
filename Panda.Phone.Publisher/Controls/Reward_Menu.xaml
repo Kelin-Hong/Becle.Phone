@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Panda.Phone.Publisher.Controls.Reward_Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Panda.Phone.Publisher.Controls"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="600" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <TextBlock Text="Reward List" Margin="20,30" FontWeight="ExtraBold" FontSize="45"/>
+        <!--<Grid Height="35" VerticalAlignment="Top" DataContext="{Binding}">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Image_Recycle/Menu/up.jpg"/>
+            </Grid.Background>
+            <Border HorizontalAlignment="Left" Height="30">
+                <TextBlock Margin="5,0,0,0" FontSize="22" Text="{Binding Path=Title}"/>
+            </Border>
+            <Image x:Name="btn_Close" Margin="0,0,3,0" Height="25" Width="25" Source="/Image_Recycle/Menu/X_active.png" HorizontalAlignment="Right" Tap="btn_Close_Tap"/>
+        </Grid>-->
+        <!--<TextBlock VerticalAlignment="Top" Margin="20" Height="50" FontSize="30" Text="Reward List"/>-->
+        <ListBox  x:Name="list_Store" Margin="30,100,30,200"  DataContext="{Binding}" ItemsSource="{Binding Path=List_RewardModel}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" >
+                        <!--<StackPanel.Background>
+                            <ImageBrush ImageSource="/Image_Recycle/Menu/bg.png"/>
+                        </StackPanel.Background>-->
+                        <StackPanel Orientation="Horizontal" Margin="10" Tap="StackPanel_Tap">
+                            <Image Source="/Image_Recycle/Menu/triangle1.png"/>
+                            <TextBlock FontSize="30" Text="{Binding Path=StoreName}"/>
+                        </StackPanel >
+                        <controls:Reward_Menu_Detail Tap="Reward_Menu_Detail_Tap"  Visibility="Collapsed" Phone="{Binding Path=Phone}" Address="{Binding Path=Address}" Time="{Binding Path=EndTime}" Width="360" Activity="{Binding Path=Describe}"> </controls:Reward_Menu_Detail>
+                        <Image Stretch="Fill" Source="/Image_Recycle/Menu/line.png" Width="400"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BecleModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="BecleModelStoreContainer">
+          <EntitySet Name="AchievementTrendTable" EntityType="BecleModel.Store.AchievementTrendTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AcquirerTable" EntityType="BecleModel.Store.AcquirerTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoryTable" EntityType="BecleModel.Store.CategoryTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CityTable" EntityType="BecleModel.Store.CityTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FriendTable" EntityType="BecleModel.Store.FriendTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ItemTable" EntityType="BecleModel.Store.ItemTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MerChantTable" EntityType="BecleModel.Store.MerChantTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MessageTable" EntityType="BecleModel.Store.MessageTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MessageToUserTable" EntityType="BecleModel.Store.MessageToUserTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PhotoTrendTable" EntityType="BecleModel.Store.PhotoTrendTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PostAffectTable" EntityType="BecleModel.Store.PostAffectTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RewardTable" EntityType="BecleModel.Store.RewardTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserTable" EntityType="BecleModel.Store.UserTable" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="AchievementTrendTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="Achievement" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Time" Type="nvarchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="AcquirerTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PassWord" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="BinName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Address" Type="text" Nullable="false" />
+          <Property Name="Avatar" Type="image" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="CategoryTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Describe" Type="text" />
+        </EntityType>
+        <EntityType Name="CityTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Point" Type="int" Nullable="false" />
+          <Property Name="LastRank" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FriendTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="FriendId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ItemTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+          <Property Name="Image" Type="image" Nullable="false" />
+          <Property Name="Time" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Describe" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MerChantTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="PassWord" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="StoreName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Avatar" Type="image" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MessageTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FromId" Type="int" Nullable="false" />
+          <Property Name="ToId" Type="int" Nullable="false" />
+          <Property Name="IsSee" Type="bit" Nullable="false" />
+          <Property Name="Message" Type="text" Nullable="false" />
+          <Property Name="Time" Type="nvarchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="MessageToUserTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FromId" Type="int" Nullable="false" />
+          <Property Name="ToId" Type="int" Nullable="false" />
+          <Property Name="MessageContent" Type="text" Nullable="false" />
+          <Property Name="Time" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="IsSee" Type="bit" Nullable="false" />
+          <Property Name="Type" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhotoTrendTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="Describe" Type="text" Nullable="false" />
+          <Property Name="Time" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="ItemId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PostAffectTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="Describe" Type="text" Nullable="false" />
+          <Property Name="Time" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="PostAffect" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RewardTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="StoreName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Address" Type="text" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Image" Type="image" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Describe" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Latitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Longitude" Type="decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Point" Type="int" Nullable="false" />
+          <Property Name="CityLastRank" Type="int" Nullable="false" />
+          <Property Name="NowCityRank" Type="int" Nullable="false" />
+          <Property Name="NowRank" Type="int" Nullable="false" />
+          <Property Name="LastRank" Type="int" Nullable="false" />
+          <Property Name="Avatar" Type="image" Nullable="false" />
+          <Property Name="Address" Type="text" Nullable="false" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="UserRank" Type="int" />
+          <Property Name="CityRank" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BecleModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BecleEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AchievementTrendTables" EntityType="BecleModel.AchievementTrendTable" />
+          <EntitySet Name="AcquirerTables" EntityType="BecleModel.AcquirerTable" />
+          <EntitySet Name="CategoryTables" EntityType="BecleModel.CategoryTable" />
+          <EntitySet Name="CityTables" EntityType="BecleModel.CityTable" />
+          <EntitySet Name="FriendTables" EntityType="BecleModel.FriendTable" />
+          <EntitySet Name="ItemTables" EntityType="BecleModel.ItemTable" />
+          <EntitySet Name="MerChantTables" EntityType="BecleModel.MerChantTable" />
+          <EntitySet Name="MessageTables" EntityType="BecleModel.MessageTable" />
+          <EntitySet Name="MessageToUserTables" EntityType="BecleModel.MessageToUserTable" />
+          <EntitySet Name="PhotoTrendTables" EntityType="BecleModel.PhotoTrendTable" />
+          <EntitySet Name="PostAffectTables" EntityType="BecleModel.PostAffectTable" />
+          <EntitySet Name="RewardTables" EntityType="BecleModel.RewardTable" />
+          <EntitySet Name="UserTables" EntityType="BecleModel.UserTable" />
+        </EntityContainer>
+        <EntityType Name="AchievementTrendTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="Achievement" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="AcquirerTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PassWord" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="BinName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Avatar" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="CategoryTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Describe" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="CityTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Point" Type="Int32" Nullable="false" />
+          <Property Name="LastRank" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FriendTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="FriendId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ItemTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <Property Name="Image" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Describe" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MerChantTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="PassWord" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="StoreName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Avatar" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MessageTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FromId" Type="Int32" Nullable="false" />
+          <Property Name="ToId" Type="Int32" Nullable="false" />
+          <Property Name="IsSee" Type="Boolean" Nullable="false" />
+          <Property Name="Message" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="MessageToUserTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FromId" Type="Int32" Nullable="false" />
+          <Property Name="ToId" Type="Int32" Nullable="false" />
+          <Property Name="MessageContent" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="IsSee" Type="Boolean" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhotoTrendTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="Describe" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="ItemId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PostAffectTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="Describe" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Time" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="PostAffect" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RewardTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StoreName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Describe" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UserTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Latitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Longitude" Type="Decimal" Nullable="false" Precision="20" Scale="17" />
+          <Property Name="Point" Type="Int32" Nullable="false" />
+          <Property Name="CityLastRank" Type="Int32" Nullable="false" />
+          <Property Name="NowCityRank" Type="Int32" Nullable="false" />
+          <Property Name="NowRank" Type="Int32" Nullable="false" />
+          <Property Name="LastRank" Type="Int32" Nullable="false" />
+          <Property Name="Avatar" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="UserRank" Type="Int32" />
+          <Property Name="CityRank" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BecleModelStoreContainer" CdmEntityContainer="BecleEntities">
+          <EntitySetMapping Name="AchievementTrendTables"><EntityTypeMapping TypeName="BecleModel.AchievementTrendTable"><MappingFragment StoreEntitySet="AchievementTrendTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Achievement" ColumnName="Achievement" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="AcquirerTables"><EntityTypeMapping TypeName="BecleModel.AcquirerTable"><MappingFragment StoreEntitySet="AcquirerTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="BinName" ColumnName="BinName" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CategoryTables"><EntityTypeMapping TypeName="BecleModel.CategoryTable"><MappingFragment StoreEntitySet="CategoryTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Describe" ColumnName="Describe" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CityTables"><EntityTypeMapping TypeName="BecleModel.CityTable"><MappingFragment StoreEntitySet="CityTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Point" ColumnName="Point" />
+            <ScalarProperty Name="LastRank" ColumnName="LastRank" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="FriendTables"><EntityTypeMapping TypeName="BecleModel.FriendTable"><MappingFragment StoreEntitySet="FriendTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="FriendId" ColumnName="FriendId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ItemTables"><EntityTypeMapping TypeName="BecleModel.ItemTable"><MappingFragment StoreEntitySet="ItemTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+            <ScalarProperty Name="Image" ColumnName="Image" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+            <ScalarProperty Name="Describe" ColumnName="Describe" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="MerChantTables"><EntityTypeMapping TypeName="BecleModel.MerChantTable"><MappingFragment StoreEntitySet="MerChantTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+            <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="MessageTables"><EntityTypeMapping TypeName="BecleModel.MessageTable"><MappingFragment StoreEntitySet="MessageTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="FromId" ColumnName="FromId" />
+            <ScalarProperty Name="ToId" ColumnName="ToId" />
+            <ScalarProperty Name="IsSee" ColumnName="IsSee" />
+            <ScalarProperty Name="Message" ColumnName="Message" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="MessageToUserTables"><EntityTypeMapping TypeName="BecleModel.MessageToUserTable"><MappingFragment StoreEntitySet="MessageToUserTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="FromId" ColumnName="FromId" />
+            <ScalarProperty Name="ToId" ColumnName="ToId" />
+            <ScalarProperty Name="MessageContent" ColumnName="MessageContent" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+            <ScalarProperty Name="IsSee" ColumnName="IsSee" />
+            <ScalarProperty Name="Type" ColumnName="Type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PhotoTrendTables"><EntityTypeMapping TypeName="BecleModel.PhotoTrendTable"><MappingFragment StoreEntitySet="PhotoTrendTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Describe" ColumnName="Describe" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+            <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PostAffectTables"><EntityTypeMapping TypeName="BecleModel.PostAffectTable"><MappingFragment StoreEntitySet="PostAffectTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="Describe" ColumnName="Describe" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+            <ScalarProperty Name="PostAffect" ColumnName="PostAffect" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="RewardTables"><EntityTypeMapping TypeName="BecleModel.RewardTable"><MappingFragment StoreEntitySet="RewardTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+            <ScalarProperty Name="Image" ColumnName="Image" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="Describe" ColumnName="Describe" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UserTables"><EntityTypeMapping TypeName="BecleModel.UserTable"><MappingFragment StoreEntitySet="UserTable">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+            <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+            <ScalarProperty Name="Point" ColumnName="Point" />
+            <ScalarProperty Name="CityLastRank" ColumnName="CityLastRank" />
+            <ScalarProperty Name="NowCityRank" ColumnName="NowCityRank" />
+            <ScalarProperty Name="NowRank" ColumnName="NowRank" />
+            <ScalarProperty Name="LastRank" ColumnName="LastRank" />
+            <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="UserRank" ColumnName="UserRank" />
+            <ScalarProperty Name="CityRank" ColumnName="CityRank" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Becle">
+        <EntityTypeShape EntityType="BecleModel.AchievementTrendTable" Width="1.5" PointX="0.75" PointY="0.75" Height="1.779012858072917" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.AcquirerTable" Width="1.5" PointX="2.75" PointY="0.75" Height="2.9251310221354156" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.CategoryTable" Width="1.5" PointX="4.75" PointY="0.75" Height="1.5879931640624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.CityTable" Width="1.5" PointX="0.75" PointY="4.75" Height="1.7790128580729157" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.FriendTable" Width="1.5" PointX="2.75" PointY="4.75" Height="1.5879931640624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.ItemTable" Width="1.5" PointX="4.75" PointY="3.75" Height="2.5430916341145822" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.MerChantTable" Width="1.5" PointX="6.75" PointY="0.75" Height="2.7341113281249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.MessageTable" Width="1.5" PointX="6.75" PointY="4.75" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.MessageToUserTable" Width="1.5" PointX="0.75" PointY="7.75" Height="2.3520719401041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.PhotoTrendTable" Width="1.5" PointX="2.75" PointY="7.75" Height="1.9700325520833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.PostAffectTable" Width="1.5" PointX="4.75" PointY="7.75" Height="1.9700325520833353" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.RewardTable" Width="1.5" PointX="6.75" PointY="7.75" Height="2.7341113281250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="BecleModel.UserTable" Width="1.5" PointX="8.75" PointY="0.75" Height="3.8802294921875031" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

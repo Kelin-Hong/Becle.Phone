@@ -1,0 +1,210 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" 
+    xmlns:control="clr-namespace:Panda.Phone.Publisher.Controls"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:eim="clr-namespace:Microsoft.Expression.Interactivity.Media;assembly=Microsoft.Expression.Interactions" 
+    xmlns:kit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    x:Class="Panda.Phone.Acquirer.AcquirerPage"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False" BackKeyPress="PhoneApplicationPage_BackKeyPress">
+    <phone:PhoneApplicationPage.Resources>
+    	<Storyboard x:Name="Storyboard1">
+    		<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="control_Category">
+    			<DiscreteObjectKeyFrame KeyTime="0">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationZ)" Storyboard.TargetName="control_Category" d:IsOptimized="True"/>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-480"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="10"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetZ)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-6000"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.SkewX)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.LocalOffsetX)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)" Storyboard.TargetName="control_Category">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="360"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    	</Storyboard>
+    	<Storyboard x:Name="Storyboard2">
+    		<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="control_Detail">
+    			<DiscreteObjectKeyFrame KeyTime="0">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="control_Detail">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-300"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-200"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-100"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="control_Detail">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="400"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="250"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="control_Detail">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)" Storyboard.TargetName="control_Detail">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="90"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="60"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="30"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    	</Storyboard>
+    	<Storyboard x:Name="Storyboard3">
+    		<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="control_Menu">
+    			<DiscreteObjectKeyFrame KeyTime="0">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="control_Menu">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="90"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="180"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="270"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="360"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="control_Menu">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+    		</DoubleAnimationUsingKeyFrames>
+    	</Storyboard>
+    	<Storyboard x:Name="Storyboard4">
+    		<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="control_TiemMenu">
+    			<DiscreteObjectKeyFrame KeyTime="0">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationZ)" Storyboard.TargetName="control_TiemMenu" d:IsOptimized="True"/>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetZ)" Storyboard.TargetName="control_TiemMenu">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="-6000"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="control_TiemMenu">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="720"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="control_TiemMenu">
+    			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    			<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+    		</DoubleAnimationUsingKeyFrames>
+    	</Storyboard>
+        <Storyboard x:Name="Storyboard5">
+            <DoubleAnimation Duration="0:0:1" To="800" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="MenuContent" d:IsOptimized="True"/>
+        </Storyboard>
+        <Storyboard x:Name="Storyboard6">
+            <DoubleAnimation Duration="0:0:0.6" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="MenuContent" d:IsOptimized="True"/>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar Opacity="0.5" ForegroundColor="White" IsVisible="True" IsMenuEnabled="True">
+            <!--<shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="btnRoute" Text="Route" Click="btnRoute_Click"/>
+
+            </shell:ApplicationBar.MenuItems>-->
+            <shell:ApplicationBarIconButton x:Name="btn_Setting" IconUri="/Image_Acquirer/setting1.png" Text="Setting"/>
+            <shell:ApplicationBarIconButton x:Name="btn_Plan" IconUri="/Image_Acquirer/plan.png" Text="Plan" Click="btn_Plan_Click"/>
+
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid x:Name="dd">
+            <Grid x:Name="nagetive" Height="70" VerticalAlignment="Top" Margin="0,0,0,0" >
+                <TextBox x:Name="txtSearch" BorderThickness="0" Background="White"  Width="174" Margin="0,5,280,3" Height="61" FontSize="20" />
+                <Image x:Name="btnSearch"  Source="/Image_Acquirer/search.jpg" Width="40" Height="40" Margin="174,16,266,14" Tap="btnSearch_Tap"/>
+                <!--<Image x:Name="btnSelect_area" Source="/icon/select.png"   Width="48" Margin="316,5,94,5" Tap="btnSelect_area_Tap"/>
+                <Image x:Name="btnSelect_r" Source="/icon/category.png"  Width="48" Margin="226,5,184,5" Tap="btnSelect_r_Tap"/>
+                <Image x:Name="btnMessage" Source="/icon/mail.png"   Width="48" Margin="403,5,7,5" Tap="btnMessage_Tap"/>-->
+                <Image x:Name="btnSelect_area" Source="/Image_Acquirer/select_area1.png"   Width="48" Margin="316,5,94,5" Tap="btnSelect_area_Tap"/>
+                <Image x:Name="btnSelect_r" Source="/Image_Acquirer/select_r1.png"  Width="48" Margin="226,5,184,5" Tap="btnSelect_r_Tap"/>
+                <Image x:Name="btnMessage" Source="/Image_Acquirer/message1.png"   Width="48" Margin="403,5,7,5" Tap="btnMessage_Tap"/>
+            </Grid>
+            <my:Map x:Name="map"  CredentialsProvider="AjlmpILfXZMz8HCz-aqkBfnZZt6UXFnVqXVIP7glejUCYrliehYU6xtEBZVshDZM" Margin="0,70,0,0" >
+                
+            </my:Map>
+            <Image x:Name="btnViewChange" Source="/Image_Acquirer/sat.jpg" Width="60" Height="60" Margin="383,89,37,547" Tap="btnViewChange_Tap"/>
+        </Grid>
+        <control:Acquirer_Category x:Name="control_Category" Visibility="Collapsed" Width="380" Height="580" RenderTransformOrigin="0.5,0.5">
+        	<control:Acquirer_Category.RenderTransform>
+        		<CompositeTransform/>
+        	</control:Acquirer_Category.RenderTransform>
+        	<control:Acquirer_Category.Projection>
+        		<PlaneProjection/>
+        	</control:Acquirer_Category.Projection></control:Acquirer_Category>
+        <!--<control:Acquirer_Detail1 x:Name="control_Detail" Height="225" Width="368" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+        	<control:Acquirer_Detail1.Projection>
+        		<PlaneProjection/>
+        	</control:Acquirer_Detail1.Projection>
+        	<control:Acquirer_Detail1.RenderTransform>
+        		<CompositeTransform/>
+        	</control:Acquirer_Detail1.RenderTransform></control:Acquirer_Detail1>-->
+        <control:Acquirer_Menu x:Name="control_Menu" Visibility="Collapsed" Height="300" Width="375">
+        	<control:Acquirer_Menu.Projection>
+        		<PlaneProjection/>
+        	</control:Acquirer_Menu.Projection></control:Acquirer_Menu>
+        <control:Acquirer_TimeMenu x:Name="control_TiemMenu" Visibility="Collapsed"  Height="275" Width="375" RenderTransformOrigin="0.5,0.5"  >
+        	<control:Acquirer_TimeMenu.RenderTransform>
+        		<CompositeTransform/>
+        	</control:Acquirer_TimeMenu.RenderTransform>
+        	<control:Acquirer_TimeMenu.Projection>
+        		<PlaneProjection/>
+        	</control:Acquirer_TimeMenu.Projection></control:Acquirer_TimeMenu>
+        <Grid x:Name="MenuContent" VerticalAlignment="Top" Visibility="Visible" RenderTransformOrigin="0.5,0.5" Width="480" Height="800" Margin="0,-800,0,0">
+            <Grid.RenderTransform>
+                <CompositeTransform/>
+            </Grid.RenderTransform>
+            <Grid.Background>
+                <ImageBrush ImageSource="/Image_Recycle/Menu/wp7_recyle_info.png"/>
+            </Grid.Background>
+        </Grid>
+    </Grid>
+    
+</phone:PhoneApplicationPage>

@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Panda.Phone.Publisher.Controls.Acquirer_Detail1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="600" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <!--<Grid.Background>
+            <ImageBrush ImageSource="/Image_Acquirer/Detail/2.png"></ImageBrush>
+        </Grid.Background>-->
+        <!--<Image x:Name="image_detail_close" Margin="0,5,5,0" VerticalAlignment="Top" HorizontalAlignment="Right" Height="20" Width="20" Source="/Image_Acquirer/Detail/X_active.png" Tap="image_detail_close_Tap" />-->
+        <TextBlock Text="Items Detail" Margin="40,50,0,0" FontSize="30" FontWeight="ExtraBold"/>
+        <ListBox x:Name="lb_Detail" Margin="40,100,0,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10">
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,0">
+                            <StackPanel Orientation="Horizontal" Margin="3">
+                             <TextBlock  Text="Items Name:"/>
+                             <TextBlock Margin="5,0,0,0" Text="{Binding Path=Name}"/>
+                            </StackPanel>
+                            <Image Source="/Image_Recycle/Message/line.png" Stretch="Fill" Width="200"/>
+                            <StackPanel Orientation="Horizontal" Margin="3">
+                                <TextBlock Text="Amount:"/>
+                                <TextBlock Margin="5,0,0,0" Text="{Binding Path=Num}"/>
+                            </StackPanel >
+                            <Image Source="/Image_Recycle/Message/line.png" Stretch="Fill" Width="200"/>
+                            <StackPanel Orientation="Horizontal" Margin="3">
+                            <TextBlock Text="Time:"/>
+                                <TextBlock Margin="5,0,0,0" Text="{Binding Path=SubmitTime}"/>
+                            </StackPanel>
+                            <Image Source="/Image_Recycle/Message/line.png" Stretch="Fill" Width="200"/>
+                            <StackPanel Orientation="Horizontal" Margin="3">
+                            <TextBlock Text="Holder:"/>
+                                <TextBlock Margin="5,00,0,0" Text="{Binding Path=UserName}"/>
+                            </StackPanel>
+                            <Image Source="/Image_Recycle/Message/line.png" Stretch="Fill" Width="200"/>
+                        </StackPanel>
+                        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Height="140" Width="140" Stretch="Fill" Margin="210,10,0,0" Loaded="Image_Loaded"/>
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

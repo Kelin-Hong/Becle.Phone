@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Panda.Phone.Views.FriendsList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:lightToolkit="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP71"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:views="clr-namespace:Panda.Phone.Views"
+    xmlns:vm="clr-namespace:Panda.Phone.ViewModels"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <DataTemplate x:Key="ListItem">
+                <views:FriendsItems></views:FriendsItems>
+            </DataTemplate>
+            <vm:FriendsListBoxViewModel x:Key="ListViewModel"></vm:FriendsListBoxViewModel>
+        </Grid.Resources>
+        <ListBox x:Name="listbox"  DataContext="{StaticResource ListViewModel}" ItemTemplate="{StaticResource ListItem}" ItemsSource="{Binding}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 >
+            
+            <!--<i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <lightToolkit:EventToCommand Command="{Binding LoadCommand, Mode=OneWay}"></lightToolkit:EventToCommand>
+                </i:EventTrigger>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <lightToolkit:EventToCommand Command="{Binding SelectChangedCommand, Mode=OneWay}"
+                                                 CommandParameter="{Binding ElementName=listbox, Path=SelectedItem}">
+
+                    </lightToolkit:EventToCommand>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>-->
+        </ListBox>
+    </Grid>
+</UserControl>

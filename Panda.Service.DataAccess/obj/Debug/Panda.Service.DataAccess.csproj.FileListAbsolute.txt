@@ -1,0 +1,8 @@
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\bin\Debug\Panda.Service.DataAccess.dll.config
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\bin\Debug\Panda.Service.DataAccess.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\bin\Debug\Panda.Service.DataAccess.pdb
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\bin\Debug\Panda.Service.Helpers.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\bin\Debug\Panda.Service.Helpers.pdb
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\obj\Debug\Panda.Service.DataAccess.dll
+C:\Users\hkl\Documents\Visual Studio 2010\Projects\Panda.Service\Panda.Service.DataAccess\obj\Debug\Panda.Service.DataAccess.pdb
